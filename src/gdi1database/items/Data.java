@@ -1,5 +1,5 @@
 package gdi1database.items;
-public class Data implements DatabaseItem{
+public abstract class Data implements DatabaseItem{
 	
 	String key, artists, title;
 	int amount, year;
@@ -22,9 +22,7 @@ public class Data implements DatabaseItem{
 		return report.toString() ;
 	}
 	
-	public String getAdditionalData(){	
-		return null;
-	}
+	public abstract String getAdditionalData();
 	
 	public String getKey(){
 		return this.key;
