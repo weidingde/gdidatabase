@@ -1,24 +1,37 @@
 package gdi1database;
 
+import java.util.HashMap;
 import java.util.Set;
 
 import gdi1database.items.DatabaseItem;
 
-public class Database<t extends DatabaseItem> implements DatabaseInterface<DatabaseItem>{
+public class Database<T extends DatabaseItem> implements
+		DatabaseInterface<DatabaseItem> {
 
-	public Database(){
-		
+	HashMap<String, DatabaseItem> databank;
+
+	public Database() {
+		databank = new HashMap<String, DatabaseItem>();
 	}
+
 	@Override
 	public boolean addEntry(DatabaseItem e) {
-		// TODO Auto-generated method stub
-		return false;
+		// make sure that data bank doesn't have this data and its key has not
+		// been used
+		if (!databank.containsValue(e) && !databank.containsKey(e.getKey())) {
+			databank.put(e.getKey(), e);
+			return true;
+		} else
+			return false;
 	}
 
 	@Override
 	public boolean deleteEntry(DatabaseItem e) {
-		// TODO Auto-generated method stub
-		return false;
+		// make sure that exactly e were deleted
+		if (databank.remove(e.getKey()) == e) {
+			return true;
+		} else
+			return false;
 	}
 
 	@Override
