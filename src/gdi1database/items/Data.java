@@ -30,7 +30,7 @@ public abstract class Data implements DatabaseItem{
 	
 	public String toString(){
 		StringBuilder report = new StringBuilder();
-		report.append(this.getData()).append(this.getAdditionalData());
+		report.append(this.getData()).append(". ").append(this.getAdditionalData());
 		return report.toString();
 	}
 }
