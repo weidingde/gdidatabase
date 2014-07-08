@@ -27,7 +27,7 @@ public class Database<T extends DatabaseItem> implements
 
 	@Override
 	public boolean deleteEntry(DatabaseItem e) {
-		// make sure that exactly e were deleted
+		// make sure that exactly data e were deleted
 		if (databank.remove(e.getKey()) == e) {
 			return true;
 		} else
@@ -36,26 +36,29 @@ public class Database<T extends DatabaseItem> implements
 
 	@Override
 	public boolean dropDatabase() {
-		// TODO Auto-generated method stub
-		return false;
+		databank.clear();
+		if (databank.isEmpty()) {
+			return true;
+		} else
+			return false;
 	}
 
 	@Override
 	public boolean entryExists(DatabaseItem e) {
-		// TODO Auto-generated method stub
-		return false;
+		if (databank.containsValue(e)) {
+			return true;
+		} else
+			return false;
 	}
 
 	@Override
 	public DatabaseItem getEntry(String key) {
-		// TODO Auto-generated method stub
-		return null;
+		return databank.get(key);
 	}
 
 	@Override
 	public Set<String> getKeys() {
-		// TODO Auto-generated method stub
-		return null;
+		return databank.keySet();
 	}
 
 	@Override
