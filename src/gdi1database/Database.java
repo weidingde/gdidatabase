@@ -91,7 +91,9 @@ public class Database<T extends DatabaseItem> implements
 		}
 	}
 
-	// sort all data in databank by their keys
+	/**
+	 * sort the data bank by its key
+	 */
 	private void tidyDatabank() {
 		// get all keys, which is going to be sorted
 		String[] keys = (String[]) databank.keySet().toArray();
