@@ -1,3 +1,9 @@
+/**
+ * creat the test class with main.methode.
+ * @author Hengwen Zhang, Wei Ding, Julius Friedrich Muth, Cong Chen
+ * @version 1.0
+ */
+
 package gdi1database;
 
 import java.util.List;
