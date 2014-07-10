@@ -1,8 +1,6 @@
 package gdi1database;
 
 import java.util.List;
-import java.util.ArrayList;
-import java.util.Set;
 
 import gdi1database.items.*;
 
@@ -20,7 +18,7 @@ public class Run {
 		CD cd1 = new CD("0602498669105", "Thirteen Senses", "The Invitation",
 				12, 2004);
 
-		Database testDB = new Database<>();
+		Database<DatabankObjekt> testDB = new Database<>();
 		testDB.addEntry(book1);
 		testDB.deleteEntry(book1);
 
