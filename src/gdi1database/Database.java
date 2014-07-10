@@ -1,5 +1,5 @@
 /**
- * die eigentliche Datenbank zu realisieren
+ * Implementation of the original data bank
  * @author Hengwen Zhang, Wei Ding, Julius Friedrich Muth, Cong Chen
  * @version 3.0
  */
