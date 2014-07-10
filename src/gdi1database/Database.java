@@ -1,3 +1,8 @@
+/**
+ * die eigentliche Datenbank zu realisieren
+ * @author Hengwen Zhang, Wei Ding, Julius Friedrich Muth, Cong Chen
+ * @version 3.0
+ */
 package gdi1database;
 
 import gdi1database.items.DatabaseItem;
