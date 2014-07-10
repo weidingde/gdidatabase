@@ -1,4 +1,5 @@
 package gdi1database.items;
+
 /**
  * 
  * base class of all data bank objects

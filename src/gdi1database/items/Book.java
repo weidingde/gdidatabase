@@ -1,6 +1,11 @@
 package gdi1database.items;
 
-public class Book extends Data {
+/**
+ * Book class with its own getAdditional method
+ * 
+ *
+ */
+public class Book extends SpecialData {
 	Book(String key, String artists, String title, int amount, int year) {
 		super(key, artists, title, amount, year);
 	}

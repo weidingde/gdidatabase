@@ -2,18 +2,23 @@ package gdi1database.items;
 
 /**
  * 
- * this class the base class of Book, BlueRay, CD and DVD. because these four
+ * This class is the base class of Book, BlueRay, CD and DVD. Because these four
  * classes have same parameter list and similar implements for all methods in
  * DatabankObjekt
  * 
+ * @param artists
+ *            , title, year: same meaning as word it self
+ * @param amout
+ *            : is pages of book, duration of CD, DVD and BlueRay
+ * 
  */
 
-public abstract class Data extends DatabankObjekt {
+public abstract class SpecialData extends DatabankObjekt {
 
 	String artists, title;
 	int amount, year;
 
-	Data(String key, String artists, String title, int amount, int year) {
+	SpecialData(String key, String artists, String title, int amount, int year) {
 		super(key);
 		this.artists = artists;
 		this.title = title;
@@ -31,6 +36,10 @@ public abstract class Data extends DatabankObjekt {
 		return report.toString();
 	}
 
+	/**
+     * will be implemented in subclass, because there are no common 
+     * getAdditionalData method for BlueRay, Book, CD and DVD classes.
+     */
 	public abstract String getAdditionalData();
 
 	public String getKey() {

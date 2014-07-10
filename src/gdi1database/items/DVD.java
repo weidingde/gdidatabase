@@ -1,6 +1,11 @@
 package gdi1database.items;
 
-public class DVD extends Data {
+/**
+ * DVD class with its own getAdditional method
+ * 
+ *
+ */
+public class DVD extends SpecialData {
 
 	DVD(String key, String artists, String title, int amount, int year) {
 		super(key, artists, title, amount, year);

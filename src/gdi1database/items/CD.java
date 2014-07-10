@@ -1,5 +1,11 @@
 package gdi1database.items;
-public class CD extends Data{
+
+/**
+ * CD class with its own getAdditional method
+ * 
+ *
+ */
+public class CD extends SpecialData{
 	
 	CD(String key, String artists, String title, int amount, int year) {
 		super(key, artists, title, amount, year);
