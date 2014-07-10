@@ -5,7 +5,7 @@ package gdi1database.items;
  * 
  *
  */
-public class DVD extends SpecialData {
+public class DVD extends SpecialDatabankObject {
 
 	DVD(String key, String artists, String title, int amount, int year) {
 		super(key, artists, title, amount, year);

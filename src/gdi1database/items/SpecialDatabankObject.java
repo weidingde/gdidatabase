@@ -13,12 +13,12 @@ package gdi1database.items;
  * 
  */
 
-public abstract class SpecialData extends DatabankObjekt {
+public abstract class SpecialDatabankObject extends DatabankObjekt {
 
 	String artists, title;
 	int amount, year;
 
-	SpecialData(String key, String artists, String title, int amount, int year) {
+	SpecialDatabankObject(String key, String artists, String title, int amount, int year) {
 		super(key);
 		this.artists = artists;
 		this.title = title;

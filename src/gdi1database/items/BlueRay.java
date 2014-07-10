@@ -5,7 +5,7 @@ package gdi1database.items;
  * 
  *
  */
-public class BlueRay extends SpecialData {
+public class BlueRay extends SpecialDatabankObject {
 	
 	BlueRay(String key, String artists, String title, int amount, int year) {
 		super(key, artists, title, amount, year);
