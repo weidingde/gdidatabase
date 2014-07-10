@@ -7,7 +7,7 @@ package gdi1database.items;
  */
 public class DVD extends SpecialDatabankObject {
 
-	DVD(String key, String artists, String title, int amount, int year) {
+	public DVD(String key, String artists, String title, int amount, int year) {
 		super(key, artists, title, amount, year);
 		// TODO Auto-generated constructor stub
 	}

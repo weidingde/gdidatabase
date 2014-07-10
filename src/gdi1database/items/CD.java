@@ -7,7 +7,7 @@ package gdi1database.items;
  */
 public class CD extends SpecialDatabankObject{
 	
-	CD(String key, String artists, String title, int amount, int year) {
+	public CD(String key, String artists, String title, int amount, int year) {
 		super(key, artists, title, amount, year);
 	}
 

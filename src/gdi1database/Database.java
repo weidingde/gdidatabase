@@ -87,11 +87,10 @@ public class Database<T extends DatabaseItem> implements DatabaseInterface<T>,
 			// this will never happen, because databank can't be null, it will
 			// be
 			// initialized when this class is initialized
-			System.out.print("<<database is null>>");
-			return null;
+			return "<<database is null>>";
+
 		} else if (cacheMap.isEmpty()) {
-			System.out.print("<<database is empty>>");
-			return null;
+			return "<<database is empty>>";
 		} else {
 			// sort the data bank at first
 			this.tidyDatabank();
@@ -110,7 +109,7 @@ public class Database<T extends DatabaseItem> implements DatabaseInterface<T>,
 	 */
 	private void tidyDatabank() {
 		// get all keys, which is going to be sorted
-		String[] keys = (String[]) cacheMap.keySet().toArray();
+		String[] keys =(String[]) cacheMap.keySet().toArray(new String[cacheMap.size()]);
 		// use a new data bank to store sorted data
 		HashMap<String, T> tidyDB = new HashMap<String, T>();
 		Arrays.sort(keys);// sort keys
