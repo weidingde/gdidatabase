@@ -12,7 +12,6 @@ package gdi1database.items;
  *            : is pages of book, duration of CD, DVD and BlueRay
  * 
  */
-
 public abstract class SpecialDatabankObject extends DatabankObjekt {
 
 	String artists, title;

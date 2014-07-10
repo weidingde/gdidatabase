@@ -6,6 +6,7 @@ package gdi1database.items;
  *
  */
 public class Book extends SpecialDatabankObject {
+	
 	Book(String key, String artists, String title, int amount, int year) {
 		super(key, artists, title, amount, year);
 	}
